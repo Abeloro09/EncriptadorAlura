@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <img src="C:\Users\abelo\Desktop\TODO\logo.jpg" alt="Descripción de la imagen">
+    <h1>Encriptador y Desencriptador</h1>
+
+    <div class="container">
+        <label>
+            <input type="radio" name="action" value="encrypt" checked> Encriptar
+        </label>
+        <label>
+            <input type="radio" name="action" value="decrypt"> Desencriptar
+        </label>
+
+        <label class="label_input">
+            Texto:
+            <textarea id="inputText"></textarea>
+        </label>
+
+        <button onclick="process()">Procesar</button>
+
+        <label class="label_input">
+            <strong>Resultado:</strong>
+            <textarea id="outputText"></textarea>
+
+        </label>
+
+        <button class="copy-btn" onclick="copyToClipboard()">Copiar</button>
+    </div>
+
+    
+</body>
+
+</html>
